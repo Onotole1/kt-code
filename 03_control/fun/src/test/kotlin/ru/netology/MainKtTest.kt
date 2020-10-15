@@ -17,7 +17,7 @@ class MainKtTest {
 
     @Test
     fun calculatePrice_discount() {
-        val expected = 902
+        val expected = 900
         val itemCount = 10
 
         val result = calculatePrice(itemCount, discountStart = 500)
