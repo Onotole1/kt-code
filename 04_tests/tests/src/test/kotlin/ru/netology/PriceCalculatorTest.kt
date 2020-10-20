@@ -4,7 +4,7 @@ import org.junit.Test
 
 import org.junit.Assert.*
 
-class MainKtTest {
+class PriceCalculatorTest {
 
     @Test
 //    fun `calculatePrice shouldn't add discount`() {
@@ -17,7 +17,7 @@ class MainKtTest {
         val level = "gold"
 
         // act
-        val result = calculatePrice(
+        val result = PriceCalculator.calculatePrice(
             itemCount = count,
             itemPrice = price,
             discount = discount,
@@ -39,7 +39,7 @@ class MainKtTest {
         val level = "gold"
 
         // act
-        val result = calculatePrice(
+        val result = PriceCalculator.calculatePrice(
             itemCount = count,
             itemPrice = price,
             discount = discount,

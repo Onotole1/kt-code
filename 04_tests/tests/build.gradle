@@ -16,6 +16,14 @@ dependencies {
     testImplementation 'junit:junit:4.12'
 }
 
+jacocoTestReport {
+    afterEvaluate {
+        classDirectories.setFrom(files(classDirectories.files.collect {
+            fileTree(dir: it, exclude: 'ru/netology/Main**')
+        }))
+    }
+}
+
 compileKotlin {
     kotlinOptions.jvmTarget = "1.8"
 }
